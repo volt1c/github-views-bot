@@ -1,4 +1,6 @@
-# github-views-bot
+# Github views bot
+
+This bot is used to increase your github's visitor counter
 
 ## args syntax
 
@@ -7,4 +9,8 @@
 * `-n <times>` - how many more views are to be
 * `--infinite` - make infinte loop
 
-to quit the program, click ctrl + c
+to quit the program, click `ctrl + c`
+
+## releases
+
+* [v0.0.2](https://github.com/Agil-Dev/github-views-bot/releases/download/v0.0.2-pre-alpha/gh-views-bot.py)
