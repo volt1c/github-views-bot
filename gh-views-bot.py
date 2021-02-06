@@ -37,11 +37,15 @@ def increse_views_infinite(url, timeout):
         i += 1
 
 
+def get_argv_or(argname, default):
+    return sys.argv[sys.argv.index(argname) + 1] if (argname in sys.argv) else default
+
+
 URL = sys.argv[sys.argv.index("-url") + 1]
 
-num = to_int_or(sys.argv[sys.argv.index("-n") + 1], 10) if ("-n" in sys.argv) else 10
+num = to_int_or(get_argv_or("-n", "10"), 10)
 
-timeout = to_int_or(sys.argv[sys.argv.index("-t") + 1], 1000) if ("-t" in sys.argv) else 1000
+timeout = to_int_or(get_argv_or("-t", "1000"), 1000)
 
 print("views increaser:")
 try:
