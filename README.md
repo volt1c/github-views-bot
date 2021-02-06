@@ -5,3 +5,5 @@
 * `-t <msec>` - frequency of increasing views
 * `-n <times>` - how many more views are to be
 * `--infinite` - make infinte loop
+
+to quit the program, click ctrl + c
