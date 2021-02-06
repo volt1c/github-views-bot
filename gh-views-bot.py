@@ -23,7 +23,7 @@ def increse_views(url, num, timeout):
         fire_and_forget(url)
         sys.stdout.flush()
         print(f"{CURSOR_UP_ONE}{ERASE_LINE}Added: {i+1}/{num}")
-        time.sleep(timeout/1000)
+        time.sleep(timeout / 1000)
 
 
 def increse_views_infinite(url, timeout):
@@ -33,15 +33,15 @@ def increse_views_infinite(url, timeout):
         fire_and_forget(url)
         sys.stdout.flush()
         print(f"{CURSOR_UP_ONE}{ERASE_LINE}Added: {i+1}/...")
-        time.sleep(timeout/1000)
+        time.sleep(timeout / 1000)
         i += 1
 
 
 url = 'https://camo.githubusercontent.com/'  # address of views
 
-num = toIntOr(sys.argv[sys.argv.index("-n")+1], 10)
+num = toIntOr(sys.argv[sys.argv.index("-n") + 1], 10)
 
-timeout = toIntOr(sys.argv[sys.argv.index("-t")+1], 1000)
+timeout = toIntOr(sys.argv[sys.argv.index("-t") + 1], 1000)
 
 print("views increaser:")
 try:
