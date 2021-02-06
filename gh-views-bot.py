@@ -3,7 +3,7 @@ import time
 import threading
 import requests
 
-from utils import toIntOr
+from utils import to_int_or
 
 CURSOR_UP_ONE = '\x1b[1A'
 ERASE_LINE = '\x1b[2K'
@@ -39,9 +39,9 @@ def increse_views_infinite(url, timeout):
 
 url = 'https://camo.githubusercontent.com/'  # address of views
 
-num = toIntOr(sys.argv[sys.argv.index("-n") + 1], 10)
+num = to_int_or(sys.argv[sys.argv.index("-n") + 1], 10)
 
-timeout = toIntOr(sys.argv[sys.argv.index("-t") + 1], 1000)
+timeout = to_int_or(sys.argv[sys.argv.index("-t") + 1], 1000)
 
 print("views increaser:")
 try:
