@@ -37,11 +37,11 @@ def increse_views_infinite(url, timeout):
         i += 1
 
 
-URL = 'https://camo.githubusercontent.com/'  # address of views
+URL = sys.argv[sys.argv.index("-url") + 1]
 
-num = to_int_or(sys.argv[sys.argv.index("-n") + 1], 10)
+num = to_int_or(sys.argv[sys.argv.index("-n") + 1], 10) if ("-n" in sys.argv) else 10
 
-timeout = to_int_or(sys.argv[sys.argv.index("-t") + 1], 1000)
+timeout = to_int_or(sys.argv[sys.argv.index("-t") + 1], 1000) if ("-t" in sys.argv) else 1000
 
 print("views increaser:")
 try:
