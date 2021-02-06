@@ -37,7 +37,7 @@ def increse_views_infinite(url, timeout):
         i += 1
 
 
-url = 'https://camo.githubusercontent.com/' #address of views
+url = 'https://camo.githubusercontent.com/'  # address of views
 
 num = toIntOr(sys.argv[sys.argv.index("-n")+1], 10)
 
