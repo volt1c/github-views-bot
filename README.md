@@ -1,7 +1,7 @@
 # Github views bot
 
-This bot is used to increase your github's visitor counter 
-"<img src="https://komarev.com/ghpvc/?username=Agil-Dev" alt="visitors" />"
+This bot is used to increase your github's visitor counter
+"<img src="./asserts/views.png" height="20" />".
 
 ## args syntax
 
