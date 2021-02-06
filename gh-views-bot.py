@@ -37,7 +37,7 @@ def increse_views_infinite(url, timeout):
         i += 1
 
 
-url = 'https://camo.githubusercontent.com/'  # address of views
+URL = 'https://camo.githubusercontent.com/'  # address of views
 
 num = to_int_or(sys.argv[sys.argv.index("-n") + 1], 10)
 
@@ -46,8 +46,8 @@ timeout = to_int_or(sys.argv[sys.argv.index("-t") + 1], 1000)
 print("views increaser:")
 try:
     if "--infinite" in sys.argv:
-        increse_views_infinite(url, timeout)
+        increse_views_infinite(URL, timeout)
     else:
-        increse_views(url, num, timeout)
+        increse_views(URL, num, timeout)
 except KeyboardInterrupt:
     print(f"{ERASE_LINE}>>> Exit <<<")
